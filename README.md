@@ -1,5 +1,6 @@
 # change_jdk
 在Android官网中，提示编译不同版本的android SDK需要的java版本可能会不同，所以在编译时可能需要切换jdk版本，为方便管理，我们写成一个脚本，通过脚本在shell中快速切换jdk。
+更多关于jdk切换的内容，可以访问我的csdn博客链接地址：[Linux通过shell脚本实现JDK版本之间的快速切换](http://blog.csdn.net/limin2928/article/details/71159259)
 
 ## 脚本使用说明
 ### 一.实现shell脚本切换JDK的步骤
