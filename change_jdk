@@ -1,0 +1,22 @@
+if [ x$1 == x ]; then
+	echo default jdk1.6
+	exit 0
+fi
+
+if [ x$1 == x1.6 ]; then
+	echo change jdk to 1.6
+	export JAVA_HOME=/usr/lib/jvm/jdk1.6.0_45
+	export JRE_HOME=$JAVA_HOME/jre
+	export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
+	export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
+	java -version
+fi
+
+if [ x$1 == x1.8 ]; then
+	echo change jdk to 1.8
+	export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+	export JRE_HOME=$JAVA_HOME/jre
+	export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
+	export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
+	java -version
+fi
